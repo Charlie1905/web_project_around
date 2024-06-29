@@ -1,0 +1,22 @@
+.header {
+  width: 882px;
+  max-width: 100%;
+}
+
+.header__logo {
+  display: flex;
+  align-items: flex-start;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding-top: 45px;
+  height: 74px;
+}
+
+.header__logo-upper {
+  font-size: 8px;
+}
+
+.header__line {
+  color: #545454;
+  max-width: 909px;
+}

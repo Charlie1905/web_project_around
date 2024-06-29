@@ -1,0 +1,250 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.content__profile {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 909px;
+}
+
+.content__photo {
+  border-radius: 50%;
+  max-width: 120px;
+  max-height: 120px;
+  margin-right: 38px;
+}
+
+.content__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  height: 77px;
+}
+
+.content__title {
+  font-size: 42px;
+  font-family: "Inter";
+  line-height: 56px;
+  margin: 0 auto;
+}
+
+.content__subtitle {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0;
+  padding-top: 2px;
+}
+
+.content__edit-button {
+  height: 24px;
+  width: 24px;
+  background-color: #00ff0000;
+  background-image: url("../images/edit.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ffffff;
+  margin-left: 31px;
+  margin-top: 20px;
+  cursor: url(../images/handHover.png), auto;
+}
+
+.content__profile-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 173px;
+}
+
+.content__edit-button:hover {
+  opacity: 0.6;
+}
+
+.content__add-button {
+  height: 49px;
+  width: 150px;
+  background-color: #00ff0000;
+  background-image: url("../images/add.png");
+  cursor: url(../images/handHover.png), auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ffffff;
+}
+
+.content__add-button:hover {
+  opacity: 0.6;
+}
+/* /////////////////////////// */
+.content__elements {
+  padding-top: 50px;
+  padding-bottom: 67px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px 29px;
+}
+
+.content__element {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 282px;
+  height: 361px;
+}
+
+.content__elements-element {
+  width: 282px;
+  height: 282px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.content__text {
+  color: #000000;
+  font-family: "Inter-Black";
+  text-align: justify;
+  font-size: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 246px;
+  margin-left: 21px;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content__like {
+  border: none;
+  background-image: url("../images/like.svg");
+  cursor: url(../images/handHover.png), auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00ff0000;
+  width: 22px;
+  height: 19px;
+}
+
+.content__trash {
+  border: none;
+  background-image: url("../images/Trash.svg");
+  cursor: url(../images/handHover.png), auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00ff0000;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  bottom: 348px;
+  left: 120px;
+}
+
+.content__trash:hover {
+  opacity: 0.6;
+}
+
+.content__like:hover {
+  opacity: 0.6;
+}
+
+.content__like:focus {
+  border: none;
+  background-image: url("../images/like_active.png");
+  cursor: url(../images/handHover.png), auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00ff0000;
+  width: 22px;
+  height: 19px;
+}
+
+@media screen and (max-width: 909px) {
+  .content__elements {
+    padding-top: 50px;
+    padding-bottom: 67px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 29px 21px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .content__profile-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 53px;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .content__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content__title {
+    font-size: 22px;
+    font-family: "Inter";
+    line-height: 56px;
+    margin: 0 auto;
+  }
+
+  .content__elements {
+    padding-top: 50px;
+    padding-bottom: 67px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 29px 21px;
+    margin: 0 auto;
+  }
+
+  .content__add-button {
+    height: 50px;
+    width: 282px;
+    background-color: #00ff0000;
+    background-image: url("../images/add.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+  }
+
+  .content__subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content__profile-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .content__edit-button {
+    height: 18px;
+    width: 18px;
+    background-color: #00ff0000;
+    background-image: url("../images/edit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ffffff;
+  }
+}
