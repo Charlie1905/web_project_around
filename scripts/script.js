@@ -42,7 +42,6 @@ function toggleSubmitButton() {
 // Añadir event listeners a los campos de entrada para verificar el contenido
 document.getElementById("Nombre").addEventListener("input", toggleSubmitButton);
 document.getElementById("Acerca").addEventListener("input", toggleSubmitButton);
-Cor;
 
 // Lo siguiente es el manipulador (handler) de entrega de formularios, aunque
 // no se enviará en ningún sitio todavía
