@@ -10,6 +10,7 @@
   margin: 0;
   padding-top: 45px;
   height: 74px;
+  font-size: 33px;
 }
 
 .header__logo-upper {
@@ -19,4 +20,18 @@
 .header__line {
   color: #545454;
   max-width: 909px;
+}
+
+@media screen and (max-width: 909px) {
+  .header__logo {
+    margin-left: 27px;
+    margin-right: 167px;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .header__logo {
+    margin-left: 27px;
+    margin-right: 167px;
+  }
 }

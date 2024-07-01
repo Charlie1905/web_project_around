@@ -9,6 +9,7 @@
   flex-direction: row;
   width: 100%;
   max-width: 909px;
+  justify-content: space-between;
 }
 
 .content__photo {
@@ -103,6 +104,12 @@
   border-top-right-radius: 10px;
 }
 
+.container__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .content__text {
   color: #000000;
   font-family: "Inter-Black";
@@ -111,7 +118,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 246px;
+  width: 220px;
   margin-left: 21px;
 }
 
