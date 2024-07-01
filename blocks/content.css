@@ -112,7 +112,7 @@
   align-items: center;
 }
 
-.content__info_text {
+.content__info-text {
   color: #000000;
   font-family: "Inter-Black";
   text-align: justify;
@@ -130,7 +130,7 @@
   justify-content: space-between;
 }
 
-.content__info_like {
+.content__info-like {
   border: none;
   background-image: url("../images/like.svg");
   cursor: url(../images/handHover.png), auto;
@@ -159,11 +159,11 @@
   opacity: 0.6;
 }
 
-.content__info_like:hover {
+.content__info-like:hover {
   opacity: 0.6;
 }
 
-.content__info_like:focus {
+.content__info-like:focus {
   border: none;
   background-image: url("../images/like_active.png");
   cursor: url(../images/handHover.png), auto;
